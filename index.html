@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="id">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Mochammad Syaifuddin Zuhri">
+        <title>Di Sekitar Amerika Serikat</title>
+        <meta name="keywords" content="html, css, javascript">
+        <link rel="stylesheet" href="./pages/index.css">
+    </head>
+
+    <body class="page">
+        <header class="header">
+            <img class="logo" src="./images/Vector.svg" alt="logo Around the U.S">
+        </header>
+        <main class="content">
+            <!--Profile-->
+            <section class="profile">
+                <img class="profile__image" src="./images/image.jpg" alt="profile avatar">
+                <div class="profile__info">
+                    <div class="profile__wrapper">
+                        <h1 class="profile__name">Jacques Cousteau</h1>
+                        <button class="button__type-edit" type="button" aria-label="edit"></button>
+                    </div>
+                    <p class="profile__job">Penjelajah</p>
+                </div>
+                <button class="button__type-add" type="button" aria-label="add"></button>
+            </section>
+
+            <!--Card-->
+            <section class="cards">
+                <ul class="cards__grid"></ul>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <p class="footer__copyright">© 2023 Around The U.S.</p>
+        </footer>
+
+        <!---------------------------------------------------------------------------------------------------------->
+
+        <!--Edit Profile-->
+        <div class="popup popup__type_edit-profile">
+            <div class="popup__window">
+                <button type="button" class="button__type-close" aria-label="close"></button>
+                <h2 class="popup__title">Edit profile</h2>
+                <form class="popup__form" name="profileEditForm" novalidate>
+
+                    <!-- Edit Profile - name input -->
+                    <input type="text" value="Jacques Cousteau" required class="popup__input popup__input_type_name"
+                        name="profileFormNameInput" placeholder="Masukkan nama" minlength="2" maxlength="40"
+                        id="profile-edit-form-name-input" autocomplete="given-name">
+                    <span id="profile-edit-form-name-input-error" class="popup__form-error"></span>
+
+                    <!-- Edit Profile - job input -->
+                    <input type="text" value="Penjelajah" required class="popup__input popup__input_type_job"
+                        name="profileFormJobInput" placeholder="Job kamu" minlength="2" maxlength="200"
+                        id="profile-edit-form-job-input" autocomplete="on">
+                    <span id="profile-edit-form-job-input-error" class="popup__form-error"></span>
+
+                    <button type="submit" class="button__type-submit" aria-label="submit">Simpan</button>
+                </form>
+            </div>
+        </div>
+
+        <!--Template card-->
+        <template id="card-template">
+            <li class="card">
+                <img src=" " alt="" class="card__image">
+                <div class="card__content">
+                    <h2 class="card__title"></h2>
+                    <div class="card__likes-container">
+                        <button type="button" class="button__style-like" aria-label="like"></button>
+                    </div>
+                </div>
+            </li>
+        </template>
+        <script src="./script/script.js"></script>
+    </body>
+
+</html>

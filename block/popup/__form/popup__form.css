@@ -1,0 +1,24 @@
+.popup__form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.popup__form-error {
+    color: #ff0000;
+    font-size: 12px;
+    line-height: 1.2;
+    visibility: hidden;
+    margin: 4px 40px;
+}
+
+.popup__form-error_visible {
+    visibility: visible;
+}

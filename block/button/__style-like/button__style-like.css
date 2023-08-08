@@ -1,0 +1,12 @@
+.button__style-like {
+    height: 19px;
+    width: 21px;
+    align-self: center;
+    padding-left: 26px;
+    background: url(../../../images/Group.svg) no-repeat center;
+    cursor: pointer;
+}
+
+.button__style-like:hover {
+    opacity: 0.5;
+}

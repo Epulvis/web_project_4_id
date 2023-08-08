@@ -1,0 +1,32 @@
+.button__type-add {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 50px;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    margin-left: auto;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: opacity 0.4s;
+    background: url(../../../images/Add_Button.svg) center no-repeat;
+}
+
+.button__type-add:hover {
+    opacity: 60%;
+}
+
+@media screen and (max-width: 754px) {
+    .button__type-add {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .button__type-add {
+        margin-left: 0;
+        width: 282px;
+    }
+}
